@@ -18,3 +18,10 @@ body{
     align-items: center;
     height: 100vh;
 }
+
+.key{
+    border: 2px solid black;
+    padding: 25px;
+    color: white;
+    font-weight: bold;
+}
