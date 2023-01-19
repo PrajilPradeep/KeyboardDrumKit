@@ -1,3 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
 body{
     background-color: lightgreen;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+
+#keyboard-keys{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
 }
