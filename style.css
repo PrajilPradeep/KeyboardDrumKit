@@ -20,8 +20,25 @@ body{
 }
 
 .key{
+    height: 80px;
+    width: 80px;
     border: 2px solid black;
-    padding: 25px;
-    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* font-weight: bold;
+    text-align: center; */
+    /* font-size: 14px; */
+}
+
+.label{
+    color: yellow;
+    font-size: 10px;
+}
+.key-label{
     font-weight: bold;
+    font-size: larger;
+    color: white;
 }
