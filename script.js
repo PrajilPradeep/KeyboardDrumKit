@@ -6,10 +6,16 @@ function playSound(e){
     audio.play();
     key.classList.add('playing');
 }
-document.addEventListener('keydown', playSound)
+document.addEventListener('keydown', playSound);
 function removeTransition(e){
     if (e.propertyName!='transform') return; //skip it if it's not a transform
     this.classList.remove('playing');
 }
 const keys = document.querySelectorAll('.key');
 keys.forEach(k=>k.addEventListener('transitionend',removeTransition))
+keys.forEach(key=>{
+    key.addEventListener('click',(e)=>{
+        const keyCode = key.getAttribute('data-key');
+        playSound({ keyCode });
+    })
+})
